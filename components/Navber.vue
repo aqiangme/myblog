@@ -16,11 +16,11 @@
             :key="item.code"
             :text="item.name"
           >
-            <b-dropdown-item>
-              <nuxt-link :to="switchLocalePath('zh')">简体中文</nuxt-link>
+            <b-dropdown-item data-lang="zh" @click="toggleLocale">
+              简体中文
             </b-dropdown-item>
-            <b-dropdown-item>
-              <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
+            <b-dropdown-item data-lang="en" @click="toggleLocale">
+              English
             </b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
@@ -36,11 +36,10 @@ export default {
       return this.$i18n.locales.filter((i) => i.code === this.$i18n.locale)
     }
   },
-  mounted() {
-    // console.info('初始化完成', this.$i18n.locale)
-    // this.$root.$on('bv::dropdown::show', (bvEvent) => {
-    //   console.log('Dropdown is about to be shown', bvEvent)
-    // })
+  methods: {
+    toggleLocale(data) {
+      this.$i18n.locale = data.target.getAttribute(`data-lang`)
+    }
   }
 }
 </script>
