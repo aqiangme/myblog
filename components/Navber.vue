@@ -38,7 +38,9 @@ export default {
   },
   methods: {
     toggleLocale(data) {
-      this.$i18n.locale = data.target.getAttribute(`data-lang`)
+      const loclaeCode = data.target.getAttribute(`data-lang`)
+      const languagePath = this.switchLocalePath(loclaeCode)
+      this.$router.push({ path: languagePath })
     }
   }
 }

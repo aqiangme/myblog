@@ -15,7 +15,7 @@ export default {
       name: '  简体中文'
     }
   ],
-  defaultLocale: 'en',
+  defaultLocale: 'zh',
   vueI18n: {
     fallbackLocale: 'en',
     messages: { en, zh }
