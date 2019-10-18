@@ -16,15 +16,20 @@
         <b-collapse id="nav-callapse" is-nav>
           <b-navbar-nav class="ml-auto">
             <b-nav-item :to="localePath('index')">
-              {{ $t('navber.index') }}
+              <span :class="{ active: this.$route.name === 'index' }">{{
+                $t('navber.index')
+              }}</span>
             </b-nav-item>
             <b-nav-item :to="localePath('posts')">
-              {{ $t('navber.posts') }}
+              <span :class="{ active: this.$route.name === 'posts' }">{{
+                $t('navber.posts')
+              }}</span>
             </b-nav-item>
             <b-nav-item :to="localePath('log')">
-              {{ $t('navber.log') }}
+              <span :class="{ active: this.$route.name === 'log' }">{{
+                $t('navber.log')
+              }}</span>
             </b-nav-item>
-
             <b-nav-item-dropdown
               v-for="i in availableLocales"
               :key="i.code"

@@ -19,13 +19,3 @@ export default {
   }
 }
 </script>
-<style scoped lang="scss">
-.banner {
-  width: 100%;
-  height: 10rem;
-  background-size: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-</style>
