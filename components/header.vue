@@ -1,7 +1,12 @@
 <template>
   <div>
-    <!-- class="fixed-top" -->
-    <b-navbar ref="ele" variant="dark" type="dark" toggleable="sm">
+    <b-navbar
+      ref="ele"
+      variant="dark"
+      type="dark"
+      toggleable="sm"
+      class="fixed-top"
+    >
       <b-container>
         <b-navbar-brand>
           {{ $t('navber.brand') }}
@@ -10,15 +15,16 @@
         <b-navbar-toggle target="nav-callapse"></b-navbar-toggle>
         <b-collapse id="nav-callapse" is-nav>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item>
-              {{ $t('navber.home') }}
+            <b-nav-item :to="localePath('index')">
+              {{ $t('navber.index') }}
             </b-nav-item>
-            <b-nav-item>
+            <b-nav-item :to="localePath('posts')">
               {{ $t('navber.posts') }}
             </b-nav-item>
-            <b-nav-item>
+            <b-nav-item :to="localePath('log')">
               {{ $t('navber.log') }}
             </b-nav-item>
+
             <b-nav-item-dropdown
               v-for="i in availableLocales"
               :key="i.code"
@@ -35,11 +41,14 @@
         </b-collapse>
       </b-container>
     </b-navbar>
+    <v-banner></v-banner>
   </div>
 </template>
 
 <script>
+import VBanner from '~/components/banner'
 export default {
+  components: { VBanner },
   computed: {
     availableLocales() {
       return this.$i18n.locales.filter((i) => i.code === this.$i18n.locale)
