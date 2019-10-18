@@ -1,12 +1,11 @@
 <template>
-  <section>
-    <navber />
-  </section>
+  <div>
+    <v-header></v-header>
+  </div>
 </template>
 <script>
-import Navber from '~/components/Navber'
-
+import VHeader from '~/components/header'
 export default {
-  components: { Navber }
+  components: { VHeader }
 }
 </script>
