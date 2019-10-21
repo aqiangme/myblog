@@ -5,5 +5,16 @@ export default {
     index: '首页',
     posts: '文章',
     log: '生活'
+  },
+  seo: {
+    home: {
+      title: '我是首页'
+    },
+    posts: {
+      title: '我是文章'
+    },
+    log: {
+      title: '我是生活'
+    }
   }
 }

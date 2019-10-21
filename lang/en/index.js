@@ -5,5 +5,16 @@ export default {
     index: 'Home',
     posts: 'Posts',
     log: 'Log'
+  },
+  seo: {
+    home: {
+      title: 'my home'
+    },
+    posts: {
+      title: 'my posts'
+    },
+    log: {
+      title: 'my log'
+    }
   }
 }

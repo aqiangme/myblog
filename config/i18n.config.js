@@ -2,7 +2,7 @@ import en from '../lang/en'
 import zh from '../lang/zh'
 
 export default {
-  seo: true,
+  seo: false,
   locales: [
     {
       code: 'zh',
@@ -17,6 +17,10 @@ export default {
   ],
   strategy: 'no_prefix',
   defaultLocale: 'zh',
+  detectBrowserLanguage: {
+    useCookie: true,
+    cookieKey: 'i18n_redirected'
+  },
   vueI18n: {
     fallbackLocale: 'zh',
     messages: { en, zh }
