@@ -1,18 +1,22 @@
 <template>
-  <div>
+  <div class="guide">
     <v-header></v-header>
+    <v-main></v-main>
+    <v-footer></v-footer>
   </div>
 </template>
 <script>
 import VHeader from '~/components/header'
+import VMain from '~/components/main'
+import VFooter from '~/components/footer'
 export default {
   head() {
     const i18nSeo = this.$nuxtI18nSeo()
     return {
       title: this.$t('seo.home.title'),
-      meta: [...i18nSeo.meta]
+      ...i18nSeo
     }
   },
-  components: { VHeader }
+  components: { VHeader, VMain, VFooter }
 }
 </script>

@@ -16,5 +16,8 @@ export default {
     log: {
       title: 'my log'
     }
+  },
+  foot: {
+    text: 'Powered by Nuxt.js'
   }
 }

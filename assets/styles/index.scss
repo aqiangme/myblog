@@ -1,2 +1,11 @@
 @import './compoents/navbar.scss'; 
 @import './compoents/banner.scss';
+@import './compoents/footer.scss';
+@import './compoents/postLists.scss';
+
+.guide{
+  background-color: #f3f3f3;
+  .text-purple{
+    color: rgb(86,61,124);
+  }
+}

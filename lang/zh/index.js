@@ -16,5 +16,8 @@ export default {
     log: {
       title: '我是生活'
     }
+  },
+  foot: {
+    text: '来苏之望,以梦为马'
   }
 }

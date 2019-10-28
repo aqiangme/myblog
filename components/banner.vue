@@ -1,7 +1,7 @@
 <template>
   <div
     class="banner"
-    :style="`background: url('/images/${setSrc}') top center no-repeat;`"
+    :style="`background: url('/images/${setSrc}') center no-repeat;`"
   >
     <h3 class="p-4 text-white">{{ $t(setText) }}</h3>
   </div>

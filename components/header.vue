@@ -1,12 +1,6 @@
 <template>
   <div>
-    <b-navbar
-      ref="ele"
-      variant="dark"
-      type="dark"
-      toggleable="sm"
-      class="fixed-top"
-    >
+    <b-navbar type="dark" toggleable="sm" class="bd-navbar fixed-top">
       <b-container>
         <b-navbar-brand>
           {{ $t('navber.brand') }}
