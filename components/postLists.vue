@@ -1,5 +1,5 @@
 <template>
-  <div class="post-lists bg-white pl-4 pr-4 mt-4 mb-4 rounded">
+  <div class="post-lists bg-white rounded pl-4 pr-4">
     <div class="post-lists-item">
       <h5 class="mt-0 text-purple pt-4">Media Title</h5>
       <div class="sub-title text-muted">2019-09-01 视频教程 React</div>

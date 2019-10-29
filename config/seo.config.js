@@ -19,7 +19,7 @@ export const head = {
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     {
       rel: 'stylesheet',
-      href: 'http://at.alicdn.com/t/font_1480962_yhf8pigq4hr.css'
+      href: 'http://at.alicdn.com/t/font_1480962_p8kdvaji6ij.css'
     }
   ],
   noscript: [{ innerHTML: 'This website requires JavaScript.' }]

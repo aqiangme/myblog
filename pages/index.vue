@@ -1,8 +1,8 @@
 <template>
   <div class="guide">
-    <v-header></v-header>
+    <v-header hidden></v-header>
     <v-main></v-main>
-    <v-footer></v-footer>
+    <v-footer hidden></v-footer>
   </div>
 </template>
 <script>
