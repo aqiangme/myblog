@@ -15,7 +15,13 @@ export const head = {
     },
     { hid: 'keyworld', name: 'keyworld', content: '以梦为马，浪迹天涯' }
   ],
-  link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    {
+      rel: 'stylesheet',
+      href: 'http://at.alicdn.com/t/font_1480962_yhf8pigq4hr.css'
+    }
+  ],
   noscript: [{ innerHTML: 'This website requires JavaScript.' }]
 }
 

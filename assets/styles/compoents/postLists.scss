@@ -1,0 +1,7 @@
+.post-lists{
+  &-item{
+    &:not(:first-child){
+      border-top: 1px solid #1e90ff;
+    }
+  }
+}
