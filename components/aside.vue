@@ -13,36 +13,15 @@
         >
       </b-card-text>
     </b-card>
-    <div class="article">
-      <hr />
-      <div class="article-title text-purple">
-        <span class="pl-4">
-          最新文章
-        </span>
-      </div>
-      <hr />
-      <ul class="article-list list-unstyled">
-        <li class="pl-4">
-          <span class="purple">1</span>
-          <a class="btn-link text-muted text-small" href="">Cras justo odio</a>
-        </li>
-        <li class="pl-4">
-          <span class="red">2</span>
-          <a class="btn-link text-muted text-small" href="">Cras justo odio</a>
-        </li>
-        <li class="pl-4">
-          <span class="orange">3</span>
-          <a class="btn-link text-muted text-small" href="">Cras justo odio</a>
-        </li>
-        <li class="pl-4">
-          <span>4</span>
-          <a class="btn-link text-muted text-small" href="">Cras justo odio</a>
-        </li>
-        <li class="pl-4">
-          <span>5</span>
-          <a class="btn-link text-muted text-small" href="">Cras justo odio</a>
-        </li>
-      </ul>
-    </div>
+    <v-article></v-article>
+    <v-calendar></v-calendar>
   </div>
 </template>
+<script>
+import VArticle from '~/components/article'
+import VCalendar from '~/components/calendar'
+export default {
+  name: 'LayoutsAside',
+  components: { VArticle, VCalendar }
+}
+</script>

@@ -3,3 +3,8 @@
     {{ $t('foot.text') }}
   </div>
 </template>
+<script>
+export default {
+  name: 'LayoutaFooter'
+}
+</script>

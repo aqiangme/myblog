@@ -2,7 +2,8 @@
 @import './compoents/banner.scss';
 @import './compoents/footer.scss';
 @import './compoents/postLists.scss';
-@import './compoents/aside.scss';
+@import './compoents/article.scss';
+@import './compoents/calendar.scss';
 
 .guide{
   background-color: #f3f3f3;
@@ -10,10 +11,36 @@
     color: rgb(86,61,124);
   }
 }
-.icon{
-  width: 1em;
-  height:1em;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
+
+.bg{
+  &-blue{
+    background-color:  #007bff!important;
+  }
+  &-indigo{
+    background-color:  #6610f2!important;
+  }
+  &-purple{
+    background-color:  #6f42c1!important;
+  }
+  &-pink{
+    background-color:  #e83e8c!important;
+  }
+  &-red{
+    background-color:  #dc3545!important;
+  }
+  &-orange{
+    background-color:  #fd7e14!important;
+  }
+  &-yellow{
+    background-color:  #ffc107!important;
+  }
+  &-green{
+    background-color:  #28a745!important;
+  }
+  &-teal{
+    background-color:  #20c997!important;
+  }
+  &-cyan{
+    background-color:  #17a2b8!important;
+  }
 }

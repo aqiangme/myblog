@@ -47,6 +47,7 @@
 <script>
 import VBanner from '~/components/banner'
 export default {
+  name: 'LayoutsHeader',
   components: { VBanner },
   computed: {
     availableLocales() {

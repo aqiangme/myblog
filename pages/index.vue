@@ -1,8 +1,8 @@
 <template>
   <div class="guide">
-    <v-header hidden></v-header>
-    <v-main></v-main>
-    <v-footer hidden></v-footer>
+    <v-header></v-header>
+    <v-main class="mt-4"></v-main>
+    <v-footer class="mt-4"></v-footer>
   </div>
 </template>
 <script>

@@ -19,5 +19,8 @@ export default {
   },
   foot: {
     text: 'Powered by Nuxt.js'
+  },
+  article: {
+    text: 'Recommended Article'
   }
 }

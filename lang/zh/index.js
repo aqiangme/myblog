@@ -19,5 +19,8 @@ export default {
   },
   foot: {
     text: '来苏之望,以梦为马'
+  },
+  article: {
+    text: '推荐文章'
   }
 }

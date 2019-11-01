@@ -14,6 +14,7 @@
 import VPostLists from '~/components/postLists'
 import VAside from '~/components/aside'
 export default {
+  name: 'LayoutsMain',
   components: { VPostLists, VAside }
 }
 </script>

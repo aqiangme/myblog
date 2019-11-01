@@ -9,6 +9,7 @@
 <script>
 import { num } from '@/utils'
 export default {
+  name: 'LayoutsBanner',
   computed: {
     setText() {
       return 'navber.' + this.$route.name
