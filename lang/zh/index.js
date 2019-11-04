@@ -22,5 +22,11 @@ export default {
   },
   article: {
     text: '推荐文章'
+  },
+  calendar: {
+    text: '万年历'
+  },
+  post: {
+    more: '阅读全文'
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <v-header></v-header> -->
+    <v-header></v-header>
     <div class="fload-header"><h4>header</h4></div>
     <div class="fload-container">
       <div class="fload-middle"><h4>middle</h4></div>
@@ -18,6 +18,21 @@
     <div class="flex-foot"><h4>flex-foot</h4></div>
   </div>
 </template>
+
+<script>
+import VHeader from '~/components/header'
+export default {
+  head() {
+    const i18nSeo = this.$nuxtI18nSeo()
+    return {
+      title: this.$t('seo.posts.title'),
+      meta: [...i18nSeo.meta]
+    }
+  },
+  components: { VHeader }
+}
+</script>
+
 <style scoped lang="scss">
 .fload-header,
 .fload-footer {
@@ -70,24 +85,9 @@
     flex: 1;
   }
   .right {
-    flex: 4;
-    // width: 220px;
+    width: 220px;
   }
 }
 .flex-foot {
 }
 </style>
-
-<script>
-// import VHeader from '~/components/header'
-// export default {
-//   head() {
-//     const i18nSeo = this.$nuxtI18nSeo()
-//     return {
-//       title: this.$t('seo.posts.title'),
-//       meta: [...i18nSeo.meta]
-//     }
-//   },
-//   components: { VHeader }
-// }
-</script>

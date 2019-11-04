@@ -22,5 +22,11 @@ export default {
   },
   article: {
     text: 'Recommended Article'
+  },
+  calendar: {
+    text: 'Calendar'
+  },
+  post: {
+    more: 'more'
   }
 }

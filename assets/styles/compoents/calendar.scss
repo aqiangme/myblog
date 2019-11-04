@@ -4,5 +4,26 @@
     background-color:rgba(86,61,124,.8);
     color: #fff;
   }
-  &-container{}
+  &-container{
+    .month{}
+    .week{
+      &-list{
+        li{
+          display: block;
+          width: 14%;
+        }
+      }
+    }
+    .day{
+      &-list{
+        li{
+          display: block;
+          width: 14%;
+          &.text-red{
+            color: #dc3545;
+          }
+        }
+      }
+    }
+  }
 }
