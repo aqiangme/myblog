@@ -44,8 +44,13 @@
             v-for="(items, index) in dayList"
             :key="index"
             class="float-left text-center mt-2"
+            :class="{
+              'text-red':
+                new Date().getDate() === items.getDate() &&
+                new Date().getMonth() === items.getMonth()
+            }"
           >
-            <span>{{ items }}</span>
+            <span>{{ items.getDate() }}</span>
           </li>
         </ul>
       </div>
@@ -67,13 +72,6 @@ export default {
   mounted() {
     this.init()
     this.weekList = ['一', '二', '三', '四', '五', '六', '七']
-    const days = []
-    let i = 0
-    while (i < 35) {
-      days.push(i)
-      i++
-    }
-    this.dayList = days
   },
   methods: {
     init(data) {
@@ -82,6 +80,25 @@ export default {
       self.year = d.getFullYear()
       self.month = d.getMonth() + 1
       self.day = d.getDate()
+
+      self.week = d.getDay()
+      const now = parseDate(self.year, self.month, self.day)
+      // this.dayList.length = 0
+      console.log('week', self.week)
+
+      for (let i = self.week - 1; i >= 0; i--) {
+        console.log('1', i)
+        const dd = new Date(now)
+        dd.setDate(dd.getDate() - i)
+        self.dayList.push(dd)
+      }
+
+      for (let i = 1; i < 35 - self.week; i++) {
+        console.log('2', i)
+        const dd = new Date(now)
+        dd.setDate(dd.getDate() + i)
+        self.dayList.push(dd)
+      }
     },
     printPre(obj) {
       const { year, month } = obj

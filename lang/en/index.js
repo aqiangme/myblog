@@ -27,6 +27,6 @@ export default {
     text: 'Calendar'
   },
   post: {
-    more: 'more'
+    more: 'Read More'
   }
 }
