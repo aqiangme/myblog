@@ -83,8 +83,8 @@ export default {
 
       self.week = d.getDay()
       const now = parseDate(self.year, self.month, self.day)
-      // this.dayList.length = 0
-      console.log('week', self.week)
+      this.dayList.length = 0
+      // console.log('week', self.week)
 
       for (let i = self.week - 1; i >= 0; i--) {
         console.log('1', i)
