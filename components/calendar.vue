@@ -27,6 +27,7 @@
           </li>
         </ul>
       </div>
+      <!-- 星期 -->
       <div class="week">
         <ul class="week-list list-unstyled clearfix ">
           <li
@@ -38,6 +39,7 @@
           </li>
         </ul>
       </div>
+      <!-- 日期 -->
       <div class="day">
         <ul class="day-list list-unstyled clearfix ">
           <li
@@ -46,8 +48,8 @@
             class="float-left text-center mt-2"
             :class="{
               'text-red':
-                new Date().getDate() === items.getDate() &&
-                new Date().getMonth() === items.getMonth()
+                items.getDate() == new Date().getDate() &&
+                items.getMonth() == new Date().getMonth()
             }"
           >
             <span>{{ items.getDate() }}</span>
@@ -66,12 +68,11 @@ export default {
     month: 1,
     day: 1,
     week: 1,
-    weekList: [],
+    weekList: ['一', '二', '三', '四', '五', '六', '七'],
     dayList: []
   }),
   mounted() {
-    this.init()
-    this.weekList = ['一', '二', '三', '四', '五', '六', '七']
+    this.init(null)
   },
   methods: {
     init(data) {
@@ -80,21 +81,16 @@ export default {
       self.year = d.getFullYear()
       self.month = d.getMonth() + 1
       self.day = d.getDate()
-
       self.week = d.getDay()
+      if (self.week === 0) self.week = 7
       const now = parseDate(self.year, self.month, self.day)
       this.dayList.length = 0
-      // console.log('week', self.week)
-
       for (let i = self.week - 1; i >= 0; i--) {
-        console.log('1', i)
         const dd = new Date(now)
         dd.setDate(dd.getDate() - i)
         self.dayList.push(dd)
       }
-
-      for (let i = 1; i < 35 - self.week; i++) {
-        console.log('2', i)
+      for (let i = 1; i < 32 - self.week; i++) {
         const dd = new Date(now)
         dd.setDate(dd.getDate() + i)
         self.dayList.push(dd)
@@ -109,7 +105,7 @@ export default {
     printNext(obj) {
       const { year, month } = obj
       const d = new Date(parseDate(year, month, 1))
-      d.setDate(35)
+      d.setDate(32)
       this.init(parseDate(d.getFullYear(), d.getMonth() + 1, 1))
     }
   }

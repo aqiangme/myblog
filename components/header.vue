@@ -14,14 +14,14 @@
                 $t('navber.index')
               }}</span>
             </b-nav-item>
-            <b-nav-item :to="localePath('posts')">
-              <span :class="{ active: this.$route.name === 'posts' }">{{
-                $t('navber.posts')
+            <b-nav-item :to="localePath('post')">
+              <span :class="{ active: this.$route.name === 'post' }">{{
+                $t('navber.post')
               }}</span>
             </b-nav-item>
-            <b-nav-item :to="localePath('log')">
-              <span :class="{ active: this.$route.name === 'log' }">{{
-                $t('navber.log')
+            <b-nav-item :to="localePath('vlog')">
+              <span :class="{ active: this.$route.name === 'vlog' }">{{
+                $t('navber.vlog')
               }}</span>
             </b-nav-item>
             <b-nav-item-dropdown

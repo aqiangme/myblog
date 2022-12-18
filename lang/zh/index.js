@@ -3,18 +3,18 @@ export default {
     brand: '我的博客',
     subBrand: '以梦为马，浪迹天涯',
     index: '首页',
-    posts: '文章',
-    log: '生活'
+    post: '文章',
+    vlog: '生活'
   },
   seo: {
     home: {
       title: '我是首页'
     },
-    posts: {
-      title: '我是文章'
+    post: {
+      title: '文章列表'
     },
-    log: {
-      title: '我是生活'
+    vlog: {
+      title: '生活视频'
     }
   },
   foot: {

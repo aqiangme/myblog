@@ -1,19 +1,19 @@
 export default {
   navber: {
     brand: 'Aqiang Me',
-    subBrand: 'hello world',
+    subBrand: 'Hello World',
     index: 'Home',
-    posts: 'Posts',
-    log: 'Log'
+    post: 'Post',
+    vlog: 'Vlog'
   },
   seo: {
     home: {
       title: 'my home'
     },
-    posts: {
+    post: {
       title: 'my posts'
     },
-    log: {
+    vlog: {
       title: 'my log'
     }
   },

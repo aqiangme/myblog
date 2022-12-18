@@ -12,20 +12,8 @@
   </div>
 </template>
 <script>
-const list = [
-  {
-    title: 'Media Title',
-    subTitle: '2019-09-01 视频教程 React',
-    src: '/images/1.jpg',
-    text: 'Set the Set the Set the Set the'
-  },
-  {
-    title: 'Media Title',
-    subTitle: '2019-09-01 视频教程 React',
-    src: '/images/1.jpg',
-    text: 'Set the Set the Set the Set the'
-  }
-]
+import { list } from '~/utils/data'
+
 export default {
   name: 'LayoutsPostList',
   data: () => ({
